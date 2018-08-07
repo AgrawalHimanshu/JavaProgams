@@ -13,7 +13,7 @@ public class FaboniciSome {
 	  int i=0;;
 	  int j=1;
 	  int k;
-	  long sum = 0;
+	  long sum = 1;
 	  System.out.print(i + " " + j);
 	  for(int l=2;l<number;l++) 
 	  {
@@ -24,6 +24,6 @@ public class FaboniciSome {
 	   j=k;
 	  }
 	  System.out.println("");
-	  System.out.println(sum+1);
+	  System.out.println(sum);
 }
 }

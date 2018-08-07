@@ -13,6 +13,6 @@ public class StringAnagram {
 
 	
 	public static void main(String args[]){
-		System.out.println(iAnagram("Hello Brother", "BRO THEROLLEH"));
+		System.out.println(iAnagram("HellRRo Brother", "BRO THEROLLRREH"));
 	}
 }

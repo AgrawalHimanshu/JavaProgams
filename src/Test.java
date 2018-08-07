@@ -14,7 +14,7 @@ public class Test{
 		AnotherClass anotherClass = new AnotherClass();
 		//anotherClass.convert(7,10);
 		
-		anotherClass.pyramids4(5);
+		//anotherClass.pyramids4(5);
 
 	}
 	

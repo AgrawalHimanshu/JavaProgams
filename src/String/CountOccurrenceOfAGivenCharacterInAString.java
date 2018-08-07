@@ -8,7 +8,7 @@ public class CountOccurrenceOfAGivenCharacterInAString {
         //original string
         String str = "HELLO BROTHER";
         System.out.println("Original String: " + str);
-            
+           
         char  ch = 'O';
 
         int count = countOccurrenceOfChar(str,ch);
@@ -19,10 +19,14 @@ public class CountOccurrenceOfAGivenCharacterInAString {
 		char[] strchar = str.toCharArray();
 		int count = 0;
 		for(int i=0; i<str.length();i++){
-			if (String.valueOf(strchar[i]).equals(String.valueOf(ch))){
+			if(strchar[i] == ch){
 				System.out.println("Character " + ch + " has Occurred");
 				count++;
-			}	
+			}
+			/*if (String.valueOf(strchar[i]).equals(String.valueOf(ch))){
+				System.out.println("Character " + ch + " has Occurred");
+				count++;
+			}	*/
 		}
     	return count;
 	}

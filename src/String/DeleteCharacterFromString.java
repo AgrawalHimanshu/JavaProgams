@@ -11,11 +11,9 @@ public class DeleteCharacterFromString {
             
         char  ch = 'N';
 
-        //reversed string using Stringbuffer
        
-        //iterative method to reverse String in Java
-        String reverseStr = removeChar(str,ch);
-        System.out.println("Reverse String in Java using Iteration: " + reverseStr);
+        String newStr = removeChar(str,ch);
+        System.out.println("Reverse String in Java using Iteration: " + newStr);
         }
 	
 	public static String removeChar(String str, char ch){

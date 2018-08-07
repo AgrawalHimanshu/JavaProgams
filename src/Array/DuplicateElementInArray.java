@@ -3,11 +3,10 @@ import java.util.Arrays;
 
 public class DuplicateElementInArray {
 
-	// public static void main (String ...arr){
 	public static void main(String arr[]) {
 		long startTime = System.nanoTime();
 
-		int[] a = { 11, 12, 11, 12, 13, 13, 13, 13, 13, 12,11, 12};
+		int[] a = { 11, 12, 11, 12, 13, 13, 13, 13, 13, 12,11, 18,18,12};
 		int i;
 		Arrays.sort(a);
 
@@ -16,6 +15,7 @@ public class DuplicateElementInArray {
 		for (i = 0; i < a.length - 1; i++) {
 			if (a[i] == a[i + 1]) {
 				count++;
+				// to consider the last element
 				if(i+1 ==a.length-1){
 					System.out.println(a[i] + "   " + count);
 				}

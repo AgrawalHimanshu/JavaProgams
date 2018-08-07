@@ -3,7 +3,7 @@ public class FindPerson2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int i = 10;
+		int i = 5;
 		
 		String s = Integer.toBinaryString(i);
 		

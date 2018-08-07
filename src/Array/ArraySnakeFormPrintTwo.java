@@ -49,11 +49,11 @@ public class ArraySnakeFormPrintTwo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int R = 4;
-		int C = 6;
-		int a[][] = { { 1, 2, 3, 4, 5, 6 }, 
-				{ 7, 8, 9, 10, 11, 12 }, 
-				{ 13, 14, 15, 16, 18, 18 },
-				{ 11, 17, 12, 12, 1, 14 } };
+		int C = 4;
+		int a[][] = { { 1, 2, 3, 4 }, 
+					  { 7, 8, 9, 10}, 
+				{ 13, 14, 15, 16},
+				{ 11, 17, 12, 12 } };
 		spiralPrint(R, C, a);
 	}
 

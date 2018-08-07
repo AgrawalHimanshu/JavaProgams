@@ -13,11 +13,13 @@ public class RandomNumbers {
 		int count=0;
 		
 			Random randomGenerator = new Random();
-		    for (int idx = 1; idx <= n; ++idx){
+			int randomInt = randomGenerator.nextInt(44100);
+		      System.out.println(randomInt);
+		   /* for (int idx = 1; idx <= n; ++idx){
 		    	
 		      int randomInt = randomGenerator.nextInt(100);
 		      System.out.println(randomInt);
-		    }    
+		    }    */
 	}
 
 }

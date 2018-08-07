@@ -1,6 +1,8 @@
 package ToCheck;
 
-
+import java.awt.AWTException;
+import java.awt.MultipleGradientPaint.ColorSpaceType;
+import java.awt.Robot;
 
 public class Check3 {
 	
@@ -32,17 +34,18 @@ public class Check3 {
 		System.out.println(j);
 	}*/
 	
-	 public static void main (String[] args) 
+	 public static void main (String[] args) throws AWTException 
 	 { 
 		 /*int b;
 		int a=b=10; 
 		 System.out.println("a="+a);
 		 System.out.println("b="+b);*/
 		 
-		 /*int a=10,b=5; 
+		 int a=10,b=5; 
 		 boolean x = a++ > 10 && ++b > 5;
 		 System.out.println("a="+a);
-		 System.out.println("b="+b);*/
+		 System.out.println("b="+b);
+		 System.out.println(x);
 
 		 /*int a=10,b; 
 		 b=~a; 
@@ -58,7 +61,19 @@ public class Check3 {
 		 float c = 13.56f;
 		 float b = c%a;
 		 System.out.println(b);*/
-		 System.out.println(i + " " +j);
+		 //System.out.printf("hello");
+		 
+		 //Manager c1 = Manager.Blue;
+		// System.out.println(c1);
+		 
+		
+	/*	 
+		 Robot rb = new Robot();
+		 
+		 rb.keyPress(69);
+		 
+		 rb.keyRelease(69);
+		 */
 	 } 
 	
 	static{

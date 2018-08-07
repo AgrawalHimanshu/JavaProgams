@@ -11,7 +11,7 @@ public class ReverseString {
         System.out.println("Original String: " + str);
 
         //iterative method to reverse String in Java
-        String reverseStr = reverse(str);
+        String reverseStr = reverseRecursively(str);
         System.out.println("Reverse String in Java using Iteration: " + reverseStr);
 
     }
@@ -53,7 +53,7 @@ public class ReverseString {
         if (str.length() < 2) {
             return str;
         }
-        System.out.println(str.charAt(0));
+      //  System.out.print(str.charAt(0));
         return reverseRecursively(str.substring(1)) + str.charAt(0);
 
     }

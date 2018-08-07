@@ -2,12 +2,12 @@ package ToCheck;
 
 public class SwitchStatement {
 
-	public static void main(String[] args) {
+	
 		// TODO Auto-generated method stub
 
+	public static void switchMethod(int i){
 		
-		
-		switch(46){
+		switch(i){
 		case 45:
 			System.out.println("in case 45");
 			break;
@@ -15,7 +15,10 @@ public class SwitchStatement {
 			System.out.println("in case 46");
 			break;
 		}
+	}
 		
+	public static void main(String[] args) {
+		SwitchStatement.switchMethod(46);
 	}
 
 }

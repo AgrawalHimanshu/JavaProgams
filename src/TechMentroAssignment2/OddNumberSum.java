@@ -11,10 +11,10 @@ public class OddNumberSum {
 		
 		Scanner sc = new Scanner(System.in);
 
-		int i = sc.nextInt();
-		int sum=0;
+		long i = sc.nextLong();
+		long sum=0;
 		
-		for(int k=1; k<=i ; k++){
+		for(long k=1; k<=i ; k++){
 			if(k%2!=0){
 				sum = sum + k;
 			}

@@ -9,7 +9,7 @@ public class Factorial {
 		@SuppressWarnings("resource")
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter Series of Delimeters");
+		System.out.println("Enter number:");
 		int number = scanner.nextInt();
 		int result = Fact(number);
 

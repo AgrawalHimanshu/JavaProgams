@@ -5,7 +5,7 @@ public class ReverseString {
 	public static void main(String args[]) throws FileNotFoundException, IOException {
 
         //original string
-        String str = "Hello";
+        String str = "Hello There";
         System.out.println("Original String: " + str);
 
         //reversed string using Stringbuffer
@@ -42,7 +42,8 @@ public class ReverseString {
         if (str.length() < 2) {
             return str;
         }
-        System.out.println(str.charAt(0));
+       // System.out.println(str.charAt(0));
+        System.out.println(str.substring(1) + str.charAt(0));
         return reverseRecursively(str.substring(1)) + str.charAt(0);
 
     }

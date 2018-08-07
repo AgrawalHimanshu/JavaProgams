@@ -1,5 +1,6 @@
 package DataStructure;
 
+// Program to reverse a linked list
 class LinkedList {
 	 
     static Node head;
@@ -19,18 +20,18 @@ class LinkedList {
     Node reverse(Node node) {
         Node prev = null;
         Node current = node;
-        Node next = null;
+        Node forward = null;
         while (current != null) {
-            next = current.next;
+        	forward = current.next;
             current.next = prev;
             prev = current;
-            current = next;
+            current = forward;
         }
         node = prev;
         return node;
     }
  
-    // prints content of double linked list
+    // prints content of linked list
     void printList(Node node) {
         while (node != null) {
             System.out.print(node.data + " ");

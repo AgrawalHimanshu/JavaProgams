@@ -15,12 +15,10 @@ public class DigitSumFinder {
 		int k = number;
 		int sum=0;
 		
-		while(true){
-			sum = sum + number%10;
+		while(number/10 != 0){
 			number = number/10;
-			if(number/10 == 0){
-				break;
-			}
+			sum = sum + number%10;
+			
 		}
 		
 		sum = sum+number;

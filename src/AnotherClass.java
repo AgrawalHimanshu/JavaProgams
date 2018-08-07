@@ -108,6 +108,11 @@ public class AnotherClass {
 			
 			}	
 	}
+		
+		public static void main (String args[]){
+			AnotherClass ac = new AnotherClass();
+			ac.pascalTriangle(5);
+		}
 	
 	
 }

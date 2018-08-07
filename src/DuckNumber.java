@@ -9,7 +9,8 @@ public class DuckNumber {
 	        Scanner sc = new Scanner(System.in);
 	        System.out.print("Enter a number: ");
 	        // Waiting for the user input
-	        String n = sc.nextLine();
+	        int k = sc.nextInt();
+	        String n = Integer.toString(k);
 	        for (int i = 0; i < n.length(); i++) {
 	            ch = n.charAt(i);
 	            if (ch == '0') {
