@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+        String s1 = "ListentfS";
+        String s2 = "SilfenttS";
+        boolean flag = true;
+        
+        char[] charS1 = s1.toLowerCase().toCharArray();
+        char[] charS2 = s2.toLowerCase().toCharArray();
+        
+        HashMap<Character, Integer> h1 = new HashMap<Character, Integer>();
+        int i =1;
+        for(char ch : charS1){
+            if(h1.containsKey(ch)){
+                h1.put(ch, h1.get(ch)+1);
+            }
+            else{
+                h1.put(ch, 1);
+            }
+        }
+        System.out.println("Initial Mappings are: " + h1);
+
+        for(char ch : charS2){
+            if(h1.containsKey(ch)){
+                h1.put(ch, h1.get(ch)+1);
+            }
+            else{
+                h1.put(ch, 1);
+            }
+        }
+        System.out.println("After Mappings are: " + h1);
+        
+        for (Map.Entry<Character,Integer> entry : h1.entrySet()) {
+            if(entry.getValue()%2 != 0){
+                flag = false;
+            }
+            
+        }
+        
+        System.out.println(flag);
+
+     }
+}
