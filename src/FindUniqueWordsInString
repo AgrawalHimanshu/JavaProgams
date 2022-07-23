@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+      String s = "My Name is Name is My Himanshu";
+      System.out.println(s.length());
+      String[] st = s.split(" ");
+      Map<String, Integer> map = new HashMap<String, Integer>();
+      
+      for(int i=0; i<st.length; i++){
+          if(map.containsKey(st[i])){
+              map.put(st[i], (map.get(st[i])+1));
+          }
+          else{
+            map.put(st[i], 1);
+          }
+      }
+     
+      for (Map.Entry<String,Integer> entry : map.entrySet()) 
+        if(entry.getValue() == 1){
+            System.out.println(entry.getKey() );
+        }
+        }
+}
