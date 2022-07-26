@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+           Integer[] arr1 = {1,5,8,9,15,19,20,20,23};
+           
+        // Arrays.sort(arr1, Collections.reverseOrder());
+        // System.out.println(Arrays.toString(arr1));
+        TreeSet<Integer> set = new TreeSet<Integer>();
+        
+        for(int i=0; i<=arr1.length-1 ; i++){
+            set.add(arr1[i]);
+        }
+        
+        TreeSet<Integer> res = (TreeSet<Integer>)set.descendingSet();
+
+        System.out.println(res);
+           
+        int K = 1;
+        int j = 0;
+        
+        Iterator iterator = res.iterator();
+
+        
+        while (iterator.hasNext() && j<K)
+        {
+            System.out.print(iterator.next() + " ");
+            j++;
+        }
+
+    }
+}
