@@ -1,0 +1,51 @@
+public class MyClass {
+    public static void main(String args[]) {
+      int coinTen = 10;
+      int coin5 = 5;
+      int coin2 = 2;
+      int coin1 = 1;
+      double coin50Paisa = 0.50;
+      
+      int coinCount = 0;
+      
+      int amount = 53;
+      int n = amount;
+      
+      while (amount !=0){
+          if(amount > 10){
+              coinCount = coinCount + amount/10;
+              amount = amount%10;
+              System.out.println("In 10 " + amount);
+            System.out.println(coinCount);
+
+          }
+          if(amount > 5 && amount <10){
+              coinCount = coinCount + amount/5;
+              amount = amount%5;
+                System.out.println("In 5 " + amount);
+                            System.out.println(coinCount);
+
+          }
+          if(amount > 2 && amount <5){
+              coinCount = coinCount + amount/2;
+              amount = amount%2;
+              System.out.println("In 2 " + amount);
+                          System.out.println(coinCount);
+
+
+          }
+          if(amount == 1){
+              coinCount = coinCount + 1;
+              amount = 0;
+              System.out.println("In 1");
+                          System.out.println(coinCount);
+
+              
+          }
+          
+      }
+      
+      System.out.println("Minimum Coin required for " + n + " is :" + coinCount);
+     
+    }
+}
